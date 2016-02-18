@@ -99,9 +99,9 @@
 		E6DC27A61C7625EB005DB48F /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
-				E6DC27DB1C762F30005DB48F /* Controllers */,
-				E6DC27DA1C762F2C005DB48F /* Models */,
-				E6DC27D91C762F22005DB48F /* Views */,
+				E6DC27DB1C762F30005DB48F /* Controller */,
+				E6DC27DA1C762F2C005DB48F /* Model */,
+				E6DC27D91C762F22005DB48F /* View */,
 				E6DC27D81C762EF7005DB48F /* Supporting Files */,
 			);
 			path = MusicVideo;
@@ -137,28 +137,28 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		E6DC27D91C762F22005DB48F /* Views */ = {
+		E6DC27D91C762F22005DB48F /* View */ = {
 			isa = PBXGroup;
 			children = (
 				E6DC27AB1C7625EB005DB48F /* Main.storyboard */,
 				E6DC27B31C7625EB005DB48F /* LaunchScreen.storyboard */,
 			);
-			name = Views;
+			name = View;
 			sourceTree = "<group>";
 		};
-		E6DC27DA1C762F2C005DB48F /* Models */ = {
+		E6DC27DA1C762F2C005DB48F /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Models;
+			name = Model;
 			sourceTree = "<group>";
 		};
-		E6DC27DB1C762F30005DB48F /* Controllers */ = {
+		E6DC27DB1C762F30005DB48F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				E6DC27A91C7625EB005DB48F /* ViewController.swift */,
 			);
-			name = Controllers;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
