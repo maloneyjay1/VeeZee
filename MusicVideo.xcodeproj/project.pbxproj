@@ -36,13 +36,13 @@
 
 /* Begin PBXFileReference section */
 		E6DC27A41C7625EB005DB48F /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6DC27A71C7625EB005DB48F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6DC27A71C7625EB005DB48F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MusicVideo/AppDelegate.swift; sourceTree = "<group>"; };
 		E6DC27A91C7625EB005DB48F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E6DC27AC1C7625EB005DB48F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6DC27AF1C7625EB005DB48F /* MusicVideo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicVideo.xcdatamodel; sourceTree = "<group>"; };
-		E6DC27B11C7625EB005DB48F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6DC27B11C7625EB005DB48F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MusicVideo/Assets.xcassets; sourceTree = "<group>"; };
 		E6DC27B41C7625EB005DB48F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E6DC27B61C7625EB005DB48F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6DC27B61C7625EB005DB48F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = MusicVideo/Info.plist; sourceTree = "<group>"; };
 		E6DC27BB1C7625EC005DB48F /* MusicVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DC27BF1C7625EC005DB48F /* MusicVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoTests.swift; sourceTree = "<group>"; };
 		E6DC27C11C7625EC005DB48F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +99,10 @@
 		E6DC27A61C7625EB005DB48F /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
-				E6DC27A71C7625EB005DB48F /* AppDelegate.swift */,
-				E6DC27A91C7625EB005DB48F /* ViewController.swift */,
-				E6DC27AB1C7625EB005DB48F /* Main.storyboard */,
-				E6DC27B11C7625EB005DB48F /* Assets.xcassets */,
-				E6DC27B31C7625EB005DB48F /* LaunchScreen.storyboard */,
-				E6DC27B61C7625EB005DB48F /* Info.plist */,
-				E6DC27AE1C7625EB005DB48F /* MusicVideo.xcdatamodeld */,
+				E6DC27DB1C762F30005DB48F /* Controllers */,
+				E6DC27DA1C762F2C005DB48F /* Models */,
+				E6DC27D91C762F22005DB48F /* Views */,
+				E6DC27D81C762EF7005DB48F /* Supporting Files */,
 			);
 			path = MusicVideo;
 			sourceTree = "<group>";
@@ -126,6 +123,42 @@
 				E6DC27CC1C7625EC005DB48F /* Info.plist */,
 			);
 			path = MusicVideoUITests;
+			sourceTree = "<group>";
+		};
+		E6DC27D81C762EF7005DB48F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6DC27B11C7625EB005DB48F /* Assets.xcassets */,
+				E6DC27B61C7625EB005DB48F /* Info.plist */,
+				E6DC27AE1C7625EB005DB48F /* MusicVideo.xcdatamodeld */,
+				E6DC27A71C7625EB005DB48F /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E6DC27D91C762F22005DB48F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6DC27AB1C7625EB005DB48F /* Main.storyboard */,
+				E6DC27B31C7625EB005DB48F /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E6DC27DA1C762F2C005DB48F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E6DC27DB1C762F30005DB48F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6DC27A91C7625EB005DB48F /* ViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,7 +550,8 @@
 				E6DC27AF1C7625EB005DB48F /* MusicVideo.xcdatamodel */,
 			);
 			currentVersion = E6DC27AF1C7625EB005DB48F /* MusicVideo.xcdatamodel */;
-			path = MusicVideo.xcdatamodeld;
+			name = MusicVideo.xcdatamodeld;
+			path = MusicVideo/MusicVideo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
