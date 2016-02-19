@@ -12,7 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = NetworkController.baseMusicURLForLimit(10)
+        
+        NetworkController.dataAtURL(url) { (resultData) -> Void in
+            
+            let alert = UIAlertController(title: "Data Task Successful", message: nil, preferredStyle: .Alert)
+            let okAction = UIAlertAction(title: "OK", style: .Default, handler: (nil))
+            alert.addAction(okAction)
+            self.presentViewController(alert, animated: true, completion: (nil))
+        }
     }
 
     override func didReceiveMemoryWarning() {
