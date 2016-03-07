@@ -7,28 +7,35 @@
 //
 
 import UIKit
+import MediaPlayer
+import MediaAccessibility
 
 class ViewController: UIViewController {
+    
+    var videos = [Video]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NetworkController.baseMusicURLForLimit(10)
+        let api = NetworkController()
         
-        NetworkController.dataAtURL(url) { (resultData) -> Void in
-            
-            let alert = UIAlertController(title: "Data Task Successful", message: nil, preferredStyle: .Alert)
-            let okAction = UIAlertAction(title: "OK", style: .Default, handler: (nil))
-            alert.addAction(okAction)
-            self.presentViewController(alert, animated: true, completion: (nil))
-        }
+        let url = api.baseMusicURLForLimit(10)
+        api.dataAtURL(url, completion: didLoadData)
     }
+    
+    func didLoadData(videos:[Video]) {
+        self.videos = videos
+        
+        for (index, name) in videos.enumerate() {
+            print("Title \(index): Name: \(name.mvName)")
+        }
+        
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 
 }
 

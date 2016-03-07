@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Videos {
+class Video {
     
     //keys
     private let labelKey = "label"

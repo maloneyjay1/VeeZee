@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E6AE8A9D1C77ABF4004E86D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE8A9C1C77ABF4004E86D5 /* Constants.swift */; };
-		E6AE8A9F1C77AC46004E86D5 /* MV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE8A9E1C77AC46004E86D5 /* MV.swift */; };
+		E6AE8A9F1C77AC46004E86D5 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE8A9E1C77AC46004E86D5 /* Video.swift */; };
 		E6DC27A81C7625EB005DB48F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DC27A71C7625EB005DB48F /* AppDelegate.swift */; };
 		E6DC27AA1C7625EB005DB48F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DC27A91C7625EB005DB48F /* ViewController.swift */; };
 		E6DC27AD1C7625EB005DB48F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DC27AB1C7625EB005DB48F /* Main.storyboard */; };
@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		E6AE8A9C1C77ABF4004E86D5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E6AE8A9E1C77AC46004E86D5 /* MV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MV.swift; sourceTree = "<group>"; };
+		E6AE8A9E1C77AC46004E86D5 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		E6DC27A41C7625EB005DB48F /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DC27A71C7625EB005DB48F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MusicVideo/AppDelegate.swift; sourceTree = "<group>"; };
 		E6DC27A91C7625EB005DB48F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		E6DC27DA1C762F2C005DB48F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E6AE8A9E1C77AC46004E86D5 /* MV.swift */,
+				E6AE8A9E1C77AC46004E86D5 /* Video.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -314,7 +314,7 @@
 			files = (
 				E6AE8A9D1C77ABF4004E86D5 /* Constants.swift in Sources */,
 				E6DC27DD1C7656D8005DB48F /* NetworkController.swift in Sources */,
-				E6AE8A9F1C77AC46004E86D5 /* MV.swift in Sources */,
+				E6AE8A9F1C77AC46004E86D5 /* Video.swift in Sources */,
 				E6DC27B01C7625EB005DB48F /* MusicVideo.xcdatamodeld in Sources */,
 				E6DC27AA1C7625EB005DB48F /* ViewController.swift in Sources */,
 				E6DC27A81C7625EB005DB48F /* AppDelegate.swift in Sources */,
