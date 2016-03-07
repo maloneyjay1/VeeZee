@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MV {
+class Videos {
     
     //keys
     private let labelKey = "label"
@@ -22,7 +22,7 @@ class MV {
     private let mvCategoryKey = "category"
     private let mvReleaseDateKey = "im:releaseData"
     
-    //prop encapsulators
+    //encapsulators
     private var _mvName:String
     private var _mvRights:String
     private var _mvPrice:String
@@ -34,7 +34,7 @@ class MV {
     private var _mvLinkToiTunes:String
     private var _mvReleaseDate:String
     
-    //prop accessors
+    //accessors
     var mvName:String {return _mvName}
     var mvRights:String {return _mvRights}
     var mvPrice:String {return _mvPrice}
@@ -46,7 +46,9 @@ class MV {
     var mvLinkToiTunes:String {return _mvLinkToiTunes}
     var mvReleaseDate:String {return _mvReleaseDate}
     
-    init?(resultData:jsonDictionary) {
+    var vImageData:NSData?
+    
+    init(resultData:jsonDictionary) {
         //mvName
         if let name = resultData[mvNameKey] as? jsonDictionary,
             mvName = name[labelKey] as? String {
@@ -79,7 +81,8 @@ class MV {
             self._mvImageURL = "No image field found in JSON call."
         }
         
-        //mvArtist
+        
+        //mvArtistw
         if let artist = resultData[mvArtistKey] as? jsonDictionary,
             mvArtist = artist[labelKey] as? String {
                 self._mvArtist = mvArtist
